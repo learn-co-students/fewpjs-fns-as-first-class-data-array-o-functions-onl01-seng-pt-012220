@@ -22,15 +22,13 @@ function unleashDog(n, b) {
     console.log(`Unleash ${n} the ${b}`);
     return `Unleash ${n} the ${b}`;
 };
-const routine = [wakeDog, leashDog , walkToPark , throwFrisbee , walkHome , unleashDog];
 
 function exerciseDog(dogName, dogBreed) {
-    let a = [];
+    let routine = [wakeDog, leashDog , walkToPark , throwFrisbee , walkHome , unleashDog];
     let i = 0;
-    while (i < routine.length) {
-        a.push(routine[i](dogName, dogBreed));
+    while (i<routine.length) {
+        routine[i](dogName, dogBreed);
         i++;
     };
-    return a;
     
 };
